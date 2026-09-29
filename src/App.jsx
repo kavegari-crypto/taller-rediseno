@@ -1,4 +1,5 @@
 import './App.css'
+import heroImage from './assets/hero.png'
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
           <div className="container">
 
             <a className="navbar-brand fw-bold" href="#">
-              Mi Viaje
+              Mi Agencia de Viajes
             </a>
 
             <button
@@ -24,23 +25,35 @@ function App() {
               <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarNav"
+            >
               <ul className="navbar-nav ms-auto">
 
                 <li className="nav-item">
-                  <a className="nav-link" href="#inicio">
+                  <a
+                    className="nav-link"
+                    href="#inicio"
+                  >
                     Inicio
                   </a>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="#productos">
-                    Productos
+                  <a
+                    className="nav-link"
+                    href="#productos"
+                  >
+                    Destinos
                   </a>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="#contacto">
+                  <a
+                    className="nav-link"
+                    href="#contacto"
+                  >
                     Contacto
                   </a>
                 </li>
@@ -53,33 +66,49 @@ function App() {
       </header>
 
       {/* HERO */}
-      <section id="inicio" className="hero">
-        <div className="container text-center">
+      <section
+        id="inicio"
+        className="hero"
+        style={{
+          backgroundImage: `
+            linear-gradient(
+              rgba(0, 0, 0, 0.45),
+              rgba(0, 0, 0, 0.45)
+            ),
+            url(${heroImage})
+          `,
+        }}
+      >
+        <div className="container text-center text-white">
 
           <h1 className="display-3 fw-bold">
-            Bienvenido a nuestra tienda
+            Descubre nuevos destinos
           </h1>
 
           <p className="lead">
-            Encuentra los mejores viajes al mejor precio.
+            Vive experiencias inolvidables y descubre
+            lugares increíbles alrededor del mundo.
           </p>
 
           <a
             href="#productos"
             className="btn btn-primary btn-lg"
           >
-            Ver aventuras
+            Explorar destinos
           </a>
 
         </div>
       </section>
 
-      {/* PRODUCTOS */}
-      <section id="productos" className="py-5">
+      {/* DESTINOS */}
+      <section
+        id="productos"
+        className="py-5"
+      >
         <div className="container">
 
           <h2 className="text-center mb-5">
-            Nuestras aventuras
+            Destinos destacados
           </h2>
 
           <div className="row g-4">
@@ -91,25 +120,26 @@ function App() {
                 <img
                   src="https://picsum.photos/500/300?random=1"
                   className="card-img-top"
-                  alt="Producto 1"
+                  alt="Cartagena"
                 />
 
                 <div className="card-body d-flex flex-column">
 
                   <h5 className="card-title">
-                    Viaje Urbano
+                    Cartagena
                   </h5>
 
                   <p className="card-text">
-                    Te llevamos a cualquer destino urbano que imagines y te garantizamos la comodidad y aventura.
+                    Disfruta de las playas, la arquitectura
+                    colonial y la cultura del Caribe colombiano.
                   </p>
 
                   <p className="fw-bold fs-5">
-                    $500.000
+                    Desde $500.000
                   </p>
 
                   <button className="btn btn-primary mt-auto">
-                    Comprar
+                    Ver destino
                   </button>
 
                 </div>
@@ -123,25 +153,26 @@ function App() {
                 <img
                   src="https://picsum.photos/500/300?random=2"
                   className="card-img-top"
-                  alt="Producto 2"
+                  alt="Santorini"
                 />
 
                 <div className="card-body d-flex flex-column">
 
                   <h5 className="card-title">
-                    Viaje de Playa
+                    Santorini
                   </h5>
 
                   <p className="card-text">
-                    Te ofracemos una escapada vacacional con mucho sol y arena a tu disposicion, garantizando la relajacion y la aventura.
+                    Descubre los paisajes, playas y
+                    atardeceres de esta increíble isla griega.
                   </p>
 
                   <p className="fw-bold fs-5">
-                    $750.000
+                    Desde $2.500.000
                   </p>
 
                   <button className="btn btn-primary mt-auto">
-                    Comprar
+                    Ver destino
                   </button>
 
                 </div>
@@ -155,25 +186,26 @@ function App() {
                 <img
                   src="https://picsum.photos/500/300?random=3"
                   className="card-img-top"
-                  alt="Producto 3"
+                  alt="París"
                 />
 
                 <div className="card-body d-flex flex-column">
 
                   <h5 className="card-title">
-                    Viaje Montaña
+                    París
                   </h5>
 
                   <p className="card-text">
-                    Te llevamos a sentir la experiencia de ermitaño en una montaña donde nada te estresara, te garantizamos el silencio y la desconeccion de la rutina.
+                    Conoce la Torre Eiffel, sus museos,
+                    calles históricas y gastronomía.
                   </p>
 
                   <p className="fw-bold fs-5">
-                    $1.000.000
+                    Desde $3.000.000
                   </p>
 
                   <button className="btn btn-primary mt-auto">
-                    Comprar
+                    Ver destino
                   </button>
 
                 </div>
@@ -183,11 +215,16 @@ function App() {
           </div>
         </div>
       </section>
-            {/* FORMULARIO DE CONTACTO */}
-      <section id="contacto" className="py-5 bg-light">
+
+      {/* FORMULARIO */}
+      <section
+        id="contacto"
+        className="py-5 bg-light"
+      >
         <div className="container">
 
           <div className="row justify-content-center">
+
             <div className="col-12 col-md-8 col-lg-6">
 
               <h2 className="text-center mb-4">
@@ -195,14 +232,15 @@ function App() {
               </h2>
 
               <p className="text-center text-muted mb-4">
-                ¿Tienes alguna pregunta sobre nuestros destinos?
-                Escríbenos y te ayudaremos.
+                ¿Tienes alguna pregunta sobre nuestros
+                destinos? Escríbenos y te ayudaremos.
               </p>
 
               <form>
 
                 {/* NOMBRE */}
                 <div className="mb-3">
+
                   <label
                     htmlFor="nombre"
                     className="form-label"
@@ -216,10 +254,12 @@ function App() {
                     id="nombre"
                     placeholder="Ingresa tu nombre"
                   />
+
                 </div>
 
                 {/* CORREO */}
                 <div className="mb-3">
+
                   <label
                     htmlFor="email"
                     className="form-label"
@@ -233,10 +273,12 @@ function App() {
                     id="email"
                     placeholder="nombre@ejemplo.com"
                   />
+
                 </div>
 
                 {/* DESTINO */}
                 <div className="mb-3">
+
                   <label
                     htmlFor="destino"
                     className="form-label"
@@ -251,20 +293,25 @@ function App() {
                     <option value="">
                       Selecciona un destino
                     </option>
+
                     <option value="cartagena">
                       Cartagena
                     </option>
+
                     <option value="santorini">
                       Santorini
                     </option>
+
                     <option value="paris">
                       París
                     </option>
                   </select>
+
                 </div>
 
                 {/* MENSAJE */}
                 <div className="mb-3">
+
                   <label
                     htmlFor="mensaje"
                     className="form-label"
@@ -278,16 +325,19 @@ function App() {
                     rows="4"
                     placeholder="Cuéntanos qué viaje estás buscando..."
                   ></textarea>
+
                 </div>
 
                 {/* BOTÓN */}
                 <div className="d-grid">
+
                   <button
                     type="submit"
                     className="btn btn-primary"
                   >
                     Enviar consulta
                   </button>
+
                 </div>
 
               </form>
@@ -300,7 +350,7 @@ function App() {
 
       {/* FOOTER */}
       <footer
-        id="contacto"
+        id="footer"
         className="bg-dark text-white py-4"
       >
         <div className="container">
@@ -309,16 +359,24 @@ function App() {
 
             {/* INFORMACIÓN */}
             <div className="col-md-6 mb-3">
-              <h5>Mi Viaje</h5>
+
+              <h5>
+                Mi Agencia de Viajes
+              </h5>
 
               <p className="mb-0">
-                Encuentra viajes de calidad al mejor precio.
+                Descubre nuevos lugares y vive
+                experiencias inolvidables.
               </p>
+
             </div>
 
             {/* ENLACES */}
             <div className="col-md-6 mb-3">
-              <h5>Enlaces</h5>
+
+              <h5>
+                Enlaces
+              </h5>
 
               <ul className="list-unstyled">
 
@@ -336,7 +394,7 @@ function App() {
                     href="#productos"
                     className="text-white text-decoration-none"
                   >
-                    Productos
+                    Destinos
                   </a>
                 </li>
 
@@ -350,6 +408,7 @@ function App() {
                 </li>
 
               </ul>
+
             </div>
 
           </div>
@@ -357,7 +416,8 @@ function App() {
           <hr />
 
           <p className="text-center mb-0">
-            © 2026 Mi Viaje. Todos los derechos reservados.
+            © 2026 Mi Agencia de Viajes.
+            Todos los derechos reservados.
           </p>
 
         </div>
