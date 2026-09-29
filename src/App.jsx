@@ -183,6 +183,120 @@ function App() {
           </div>
         </div>
       </section>
+            {/* FORMULARIO DE CONTACTO */}
+      <section id="contacto" className="py-5 bg-light">
+        <div className="container">
+
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-8 col-lg-6">
+
+              <h2 className="text-center mb-4">
+                Contáctanos
+              </h2>
+
+              <p className="text-center text-muted mb-4">
+                ¿Tienes alguna pregunta sobre nuestros destinos?
+                Escríbenos y te ayudaremos.
+              </p>
+
+              <form>
+
+                {/* NOMBRE */}
+                <div className="mb-3">
+                  <label
+                    htmlFor="nombre"
+                    className="form-label"
+                  >
+                    Nombre
+                  </label>
+
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="nombre"
+                    placeholder="Ingresa tu nombre"
+                  />
+                </div>
+
+                {/* CORREO */}
+                <div className="mb-3">
+                  <label
+                    htmlFor="email"
+                    className="form-label"
+                  >
+                    Correo electrónico
+                  </label>
+
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    placeholder="nombre@ejemplo.com"
+                  />
+                </div>
+
+                {/* DESTINO */}
+                <div className="mb-3">
+                  <label
+                    htmlFor="destino"
+                    className="form-label"
+                  >
+                    Destino de interés
+                  </label>
+
+                  <select
+                    className="form-select"
+                    id="destino"
+                  >
+                    <option value="">
+                      Selecciona un destino
+                    </option>
+                    <option value="cartagena">
+                      Cartagena
+                    </option>
+                    <option value="santorini">
+                      Santorini
+                    </option>
+                    <option value="paris">
+                      París
+                    </option>
+                  </select>
+                </div>
+
+                {/* MENSAJE */}
+                <div className="mb-3">
+                  <label
+                    htmlFor="mensaje"
+                    className="form-label"
+                  >
+                    Mensaje
+                  </label>
+
+                  <textarea
+                    className="form-control"
+                    id="mensaje"
+                    rows="4"
+                    placeholder="Cuéntanos qué viaje estás buscando..."
+                  ></textarea>
+                </div>
+
+                {/* BOTÓN */}
+                <div className="d-grid">
+                  <button
+                    type="submit"
+                    className="btn btn-primary"
+                  >
+                    Enviar consulta
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
 
       {/* FOOTER */}
       <footer
