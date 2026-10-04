@@ -1,16 +1,13 @@
-# React + Vite
+# Descripcion del proyecto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El proyecto consiste en el desarrollo del taller de rediseño donde se creo un header, una hero section, un grid cards de tres tarjetas, un fomrulario y un footer.
 
-Currently, two official plugins are available:
+# Tecnologias usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Para este taller se uso react, vite y bootstrap como tecnologias para la creacion de los componentes de la pagina.
 
-## React Compiler
+# ¿Por que se utilizo Bootstrap?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Bootstrap se uso porque permite agilizar el proceso de diseño y desarrollo de la interfaz mediante componentes y clases prediseñadas.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ademas, Bootstrap proporciona herramientas que aplican el diseño responsivo y permite la consistencia visual y estructurada de los componentes.
